@@ -91,7 +91,7 @@ def save_dataset(filename, dataset):
             pickle.dump(x, f, pickle.HIGHEST_PROTOCOL)
             
 def get_len(filename):
-    """(범용) pickle로 저장된 마지막 페이지 인덱스를 구하는 함수
+    """(범용) pickle로 저장된 데이터의 길이를 구하는 함수
     arguments:
     filename -- 저장된 피클 파일 이름(확장자 포함)
     """
