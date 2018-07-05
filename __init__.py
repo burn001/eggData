@@ -1,4 +1,4 @@
-from . import import DataViewer
-from . import import PkLib
+from . import DataViewer
+from . import PkLib
 
 __all__=['DataViewer', 'PkLib']
