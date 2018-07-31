@@ -1,6 +1,6 @@
 import pickle, os
 
-def add_to_pickle(filename, itm):
+def add_to_pickle(itm, filename):
     """(범용)피클 파일을 열어서 새로운 데이터를 추가하는 함수
     arguments:
     filename -- 저장하고자 하는 피클 파일명(존재하지 않을 시 새로 만들게 됨)
@@ -10,7 +10,7 @@ def add_to_pickle(filename, itm):
         pickle.dump(itm, f, pickle.HIGHEST_PROTOCOL)
     return
 
-def dump_to_pickle(filename, itm):
+def dump_to_pickle(itm, filename):
     """(범용)피클 파일에 itm을 통째로 저장
     arguments:
     filename -- 저장하고자 하는 피클 파일명(존재하지 않을 시 새로 만들게 됨)
